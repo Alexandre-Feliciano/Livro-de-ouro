@@ -55,7 +55,7 @@ canvas {
     z-index: 1;
     color: white;
     text-align: center;
-    padding-top: 20%;
+    /* padding-top: 20%; */
     font-family: 'Segoe UI', sans-serif;
 }
 
@@ -112,8 +112,13 @@ h1 {
 }
 
 .btn-comecar:hover {
-    background-color: var(--AzulClaro);
+    background-color: var(--Azul);
     transform: scale(1.05);
+     box-shadow: 
+        0 0 20px var(--AzulClaro),
+        0 0 40px var(--AzulClaro),
+        0 0 80px var(--AzulClaro),
+        0 0 100px var(--AzulClaro);
 }
 
 .btn-comecar:active {

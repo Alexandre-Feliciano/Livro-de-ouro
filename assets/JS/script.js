@@ -52,3 +52,9 @@ window.addEventListener("resize", () => {
     canvas.width = window.innerWidth;
     canvas.height = window.innerHeight;
 });
+
+// Conectando as páginas
+
+document.querySelector('button').onclick = function(){
+    window.location.href = "/assets/pages/gallery.html"
+}

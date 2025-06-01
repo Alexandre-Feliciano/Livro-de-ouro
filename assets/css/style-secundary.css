@@ -33,7 +33,7 @@ body {
 .content {
     position: relative;
     z-index: 1;
-    color: white;
+    color: var(--Branco);
     text-align: center;
     padding-top: 20%;
     font-family: 'Segoe UI', sans-serif;
@@ -46,10 +46,22 @@ img {
     margin-bottom: 50px;
 }
 
+
 #image_turma {
     width: 480px;
     height: 380px;
     border-radius: 15px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+#image_turma:hover{
+    transform: scale(1.05); 
+    border-radius: 10px;
+     box-shadow: 
+        0 0 20px var(--AzulClaro),
+        0 0 40px var(--AzulClaro),
+        0 0 80px var(--AzulClaro),
+        0 0 100px var(--AzulClaro);
 }
 
 h1 {
@@ -114,12 +126,13 @@ h1 {
 
 #section-secundary {
     background-color: var(--Preto);
-    height: 1300px;
+    height: 1100px;
 }
 
 #conteiner-cloud {
+    margin-top: 70px;
     display: flex;
-    gap: 25px;
+    gap: 30px;
     justify-content: center;
     flex-direction: column;
     align-items: center;
@@ -132,6 +145,26 @@ h1 {
 }
 
 #text-message {
-    font-family: 'Orbitron';
+    font-family: 'Arial';
     color: var(--Branco);
+    margin-left: 20px;
+}
+
+#section-3 {
+    height: 620px;
+}
+
+#section-4{
+    background-color: var(--Preto);
+    height: 600px;
+    display: flex;
+}
+
+#title-terciary{
+    font-family: 'Orbitron';
+    font-size: 45px;
+    font-weight: 550;
+    display: flex;
+    position:center;
+
 }
