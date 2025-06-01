@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Livro de Ouro - Turma Informática</title>
+    <link rel="stylesheet" href="/assets/css/style-secundary.css">
+    <link rel="stylesheet" href="/assets/css/reset.css">
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wordcloud2.js/1.1.0/wordcloud2.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+
+<body>
+
+    <section>
+        <div id="particles-js"></div>
+        <div id="conteiner-principal">
+            <figure>
+                <img id="image_turma" src="/assets/img/turma_1814.jpg" alt="">
+            </figure>
+
+            <p id="text-message"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia illo iusto sapiente
+                aliquid cum eligendi veritatis in, molestias libero voluptas laboriosam, dolorum tenetur beatae! Ipsam
+                corrupti optio fugiat voluptates autem? Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Repellendus quam modi sit nesciunt sint illum atque iusto vero recusandae delectus laborum, eveniet, in
+                ex, quia quaerat voluptatibus. Reiciendis, a eos? Lorem ipsum dolor sit amet consectetur adipisicing
+                elit. Alias, voluptatibus nulla, vel asperiores, numquam blanditiis maiores quibusdam vitae labore
+                provident voluptatum aperiam. Dolorem aperiam earum nam, eius exercitationem odio quisquam? Lorem ipsum,
+                dolor sit amet consectetur adipisicing elit. Dolor optio maiores dolores praesentium est beatae
+                provident adipisci aperiam labore perspiciatis odio natus cupiditate enim illum animi ratione, aliquam
+                error tempora.</p>
+        </div>
+    </section>
+
+
+    <section id="section-secundary">
+        <div id="conteiner-secundary">
+            <h1 id="title-primary">Relembre o Passado</h1>
+            <div id="image-carousel">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="/assets/img/turma_1814.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="/assets/img/turma_1814.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="/assets/img/turma_1814.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="/assets/img/turma_1814.jpg" alt=""></div>
+                    <div class="swiper-slide"><img src="/assets/img/turma_1814.jpg" alt=""></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- A parte da nuvem das palavras, está com uma qualidade baixa devido tamanho-->
+        <div id="conteiner-cloud">
+            <h1 id="title-secundary">Todos os apoiadores</h1>
+            <canvas id="word-cloud"></canvas>
+        </div>
+
+    </section>
+
+
+    <script src="/assets/JS/particles.js"></script>
+    <script src="/assets/JS/wordclound.js"></script>
+    <script src="/assets/JS/carousel.js"></script>
+</body>
+
+</html>
