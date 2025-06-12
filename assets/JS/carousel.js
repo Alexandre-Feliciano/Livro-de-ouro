@@ -1,11 +1,11 @@
 const swiper = new Swiper('#image-carousel', {
     loop: true,
-    slidesPerView: 3,
-    spaceBetween: 50,
+    slidesPerView: 4,
+    spaceBetween: 0.3,
     autoplay: {
-      delay: 2500,
+      delay: 500,
       disableOnInteraction: false,
     },
-    speed: 8000,
-    grabCursor: true,
+    speed: 900,
+    grabCursor: false,
   });
