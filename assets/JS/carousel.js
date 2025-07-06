@@ -1,7 +1,7 @@
 const swiper = new Swiper('#image-carousel', {
     loop: true,
     slidesPerView: 4,
-    spaceBetween: 0.3,
+    spaceBetween: 0.5,
     autoplay: {
       delay: 500,
       disableOnInteraction: false,

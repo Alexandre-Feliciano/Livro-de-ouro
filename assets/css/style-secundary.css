@@ -19,7 +19,6 @@ body {
 }
 
 
-
 #particles-js {
     position: fixed;
     width: 100%;
@@ -39,6 +38,22 @@ body {
     font-family: 'Segoe UI', sans-serif;
 }
 
+/* Agradecimentos */
+
+#Agradecimentos{
+    width: 1300px;
+    height: 70px;
+    display: flex;
+    margin-top: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+#Agradecimentos h1{
+    font-size: 60px;
+    font-family: 'Orbitron';
+    font-weight: bold;
+}
 
 img {
     width: 250px;
@@ -64,6 +79,14 @@ img {
         0 0 100px var(--AzulClaro);
 }
 
+#conteiner-principal {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin: 6%;
+    gap: 20px;
+}
+
 h1 {
     font-size: 50px;
     font-weight: 600;
@@ -82,13 +105,6 @@ h1 {
     font-weight: 550;
 }
 
-#conteiner-principal {
-    display: flex;
-    justify-content: left;
-    align-items: center;
-    margin: 10%;
-    gap: 20px;
-}
 
 #conteiner-secundary {
     display: flex;
@@ -104,12 +120,6 @@ h1 {
     padding: 5%;
 }
 
-#image-carousel {
-    width: 106%;
-    margin-top: 4%;
-    margin-bottom: 0.5%;
-    overflow: hidden;
-}
 
 #message{
     display: flex;
@@ -123,6 +133,15 @@ h1 {
     
 }
 
+/* Carrousel */
+
+#image-carousel {
+    width: 106%;
+    margin-top: 4%;
+    margin-bottom: 0.5%;
+    overflow: hidden;
+}
+
 .swiper-slide {
     display: flex;
     justify-content: center;
@@ -130,10 +149,14 @@ h1 {
 }
 
 .swiper-slide img {
-    width: 380px;
-    height: 250px;
+    /* Mudar espaçamento */
+    width: 310px;
+    height: 220px;
     border-radius: 15px;
+   
 }
+
+/* Nuven de palavras */
 
 #word-cloud {
     width: 650px;
@@ -144,7 +167,7 @@ h1 {
 
 #section-secundary {
     background-color: var(--Preto);
-    height: 1460px;
+    height: 1440px;
 }
 
 #conteiner-cloud {
@@ -167,7 +190,7 @@ h1 {
     color: var(--Branco);
     margin-left: 20px;
     text-align: justify;
-    font-size: 20px;
+    font-size: 17px;
 }
 
 #name{
@@ -187,9 +210,11 @@ h1 {
     height: 620px;
 }
 
+/* recados */
+
 #section-4{
     background-color: var(--Preto);
-    height: 700px;
+    height: 770px;
     display: flex;
     flex-direction: column;
 }
@@ -197,9 +222,39 @@ h1 {
 
 #title-terciary{
     font-family: 'Orbitron';
-    font-size: 45px;
+    font-size: 60px;
     font-weight: 550;
     display: flex;
     position:center;
+    align-items: center;
+    margin: 20px 0 0 520px;
+}
 
+#pay-button{
+    height: 60px;
+    width: 350px;
+    margin: 0 0 0 490px;
+    border: none;
+    border-radius: 30px;
+    background-color: var(--Azul);
+    color: var(--Branco);
+    font-family: 'Orbitron';
+    font-weight: bold;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+#pay-button:hover{
+    background-color: var(--Azul);
+    transform: scale(1.05);
+     box-shadow: 
+        0 0 20px var(--AzulClaro),
+        0 0 40px var(--AzulClaro),
+        0 0 80px var(--AzulClaro),
+        0 0 100px var(--AzulClaro);
+}
+
+#pay-button:active{
+    transform: scale(0.98);
 }

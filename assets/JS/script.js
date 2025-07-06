@@ -58,3 +58,7 @@ window.addEventListener("resize", () => {
 document.querySelector('button').onclick = function(){
     window.location.href = "/assets/pages/gallery.html"
 }
+
+document.getElementById("pay-button").onclick = function(){
+    window.location.href = "./assets/pages/pamento.html";
+}
