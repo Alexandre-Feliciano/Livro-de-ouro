@@ -258,3 +258,166 @@ h1 {
 #pay-button:active{
     transform: scale(0.98);
 }
+
+@media (max-width: 475px) {
+
+    body {
+            height: 100vh;
+    }
+
+    /* Agradecimentos */
+
+    #Agradecimentos{
+        width: 375px;
+        height: 60px;
+        display: flex;
+        margin-top: 10px;
+        margin-bottom: 20px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #Agradecimentos h1{
+        font-size: 35px;
+        font-family: 'Orbitron';
+        font-weight: bold;
+    }
+
+    #conteiner-principal{
+        display: flex;
+        justify-content: left;
+        flex-direction: column;
+        margin: 6%;
+        gap: 20px;
+    }
+
+    #image_turma {
+        width: 300px;
+        height: 200px;
+        border-radius: 15px;
+        transition: background-color 0.3s ease, transform 0.2s ease;
+    }
+
+    #text-message{
+        font-family: 'Arial';
+        color: var(--Branco);
+        text-align: justify;
+        font-size: 15px;
+    }
+
+    /* Imagens */
+
+    #section-secundary {
+        background-color: var(--Preto);
+        height: 770px;
+    }
+
+    #title-primary {
+        margin-top:25px;
+        margin-bottom:25px;
+        font-family: 'Orbitron';
+        font-size: 35px;
+        font-weight: 550;
+    }
+
+    #image-carousel {
+        width: 106%;
+        margin-top: 4%;
+        margin-bottom: 0.5%;
+        overflow: hidden;
+    }
+
+    .swiper-slide img {
+    /* Mudar espaçamento */
+        width: 110px;
+        height: 120px;
+        border-radius: 15px;
+   
+    }
+
+    .swiper-wrapper{
+        margin-top: 10px;
+    }
+
+    /* Nuvens de palavras */
+
+    #title-secundary{
+        font-size: 35px;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    #word-cloud {
+        width: 330px;
+        height: 350px;
+        border-radius: 10px;
+        box-shadow: 0 0 20px 2px var(--Branco);
+    }
+
+    /* Recados */
+
+    #section-4{
+        background-color: var(--Preto);
+        height: 790px;
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    #title-terciary{
+        font-size: 40px;
+        margin-left:95px;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    #message{
+        display: flex;
+        font-family: 'Orbitron';
+        flex-direction: column;
+        padding: 3%;
+        width: 270px;
+        height: 300px;
+        border-radius: 15px;
+        gap: 25px;
+        
+    }
+
+    .typed-name{
+        font-size: 15px;
+    }
+
+    .typed-message{
+        font-size: 10px;
+    }
+
+    #pay-button{
+        height: 60px;
+        width: 280px;
+        margin: 150px 0 0 60px;
+        border: none;
+        border-radius: 30px;
+        background-color: var(--Azul);
+        color: var(--Branco);
+        font-family: 'Orbitron';
+        font-weight: bold;
+        font-size: 15px;
+        cursor: pointer;
+        transition: background-color 0.3s ease, transform 0.2s ease;
+    }
+
+    #pay-button:hover{
+        background-color: var(--Azul);
+        transform: scale(1.05);
+        box-shadow: 
+            0 0 20px var(--AzulClaro),
+            0 0 40px var(--AzulClaro),
+            0 0 80px var(--AzulClaro),
+            0 0 100px var(--AzulClaro);
+    }
+
+    #pay-button:active{
+        transform: scale(0.98);
+    }
+
+}
