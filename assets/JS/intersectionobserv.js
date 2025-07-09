@@ -1,5 +1,5 @@
 const div_title = document.getElementById("section-secundary");
-const div_message = document.getElementById("message");
+const div_message = document.getElementById("recado-swiper");
 
 const titlecomand = new IntersectionObserver((entries, titlecomand) => {
     entries.forEach(entry => {

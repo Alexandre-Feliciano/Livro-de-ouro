@@ -40,7 +40,7 @@ body {
 
 /* Agradecimentos */
 
-#Agradecimentos{
+#Agradecimentos {
     width: 1300px;
     height: 70px;
     display: flex;
@@ -49,7 +49,7 @@ body {
     align-items: center;
 }
 
-#Agradecimentos h1{
+#Agradecimentos h1 {
     font-size: 60px;
     font-family: 'Orbitron';
     font-weight: bold;
@@ -69,10 +69,10 @@ img {
     transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
-#image_turma:hover{
-    transform: scale(1.05); 
+#image_turma:hover {
+    transform: scale(1.05);
     border-radius: 10px;
-     box-shadow: 
+    box-shadow:
         0 0 20px var(--AzulClaro),
         0 0 40px var(--AzulClaro),
         0 0 80px var(--AzulClaro),
@@ -114,23 +114,22 @@ h1 {
     padding: 3%;
 }
 
-#conteiner-message{
+#conteiner-message {
     display: flex;
     justify-content: center;
     padding: 5%;
 }
 
-
-#message{
+.message {
     display: flex;
     font-family: 'Orbitron';
     flex-direction: column;
     padding: 3%;
-    width: 50%;
+    width: 45%;
     height: 400px;
     border-radius: 15px;
     gap: 25px;
-    
+
 }
 
 /* Carrousel */
@@ -145,7 +144,7 @@ h1 {
 .swiper-slide {
     display: flex;
     justify-content: center;
-    align-items: center; 
+    align-items: center;
 }
 
 .swiper-slide img {
@@ -153,7 +152,7 @@ h1 {
     width: 310px;
     height: 220px;
     border-radius: 15px;
-   
+
 }
 
 /* Nuven de palavras */
@@ -193,13 +192,13 @@ h1 {
     font-size: 17px;
 }
 
-#name{
+#name {
     font-size: 43px;
     color: var(--Branco);
     font-weight: 600;
 }
 
-#p-message{
+#p-message {
     font-size: 23px;
     text-align: justify;
     line-height: 35px;
@@ -212,25 +211,34 @@ h1 {
 
 /* recados */
 
-#section-4{
+#section-4 {
     background-color: var(--Preto);
     height: 770px;
     display: flex;
     flex-direction: column;
 }
 
+#message-recado {
+    width: 111%;
+}
 
-#title-terciary{
+#title-terciary {
     font-family: 'Orbitron';
     font-size: 60px;
     font-weight: 550;
     display: flex;
-    position:center;
+    position: center;
     align-items: center;
     margin: 20px 0 0 520px;
 }
 
-#pay-button{
+#recado-swiper .swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#pay-button {
     height: 60px;
     width: 350px;
     margin: 0 0 0 490px;
@@ -245,29 +253,29 @@ h1 {
     transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
-#pay-button:hover{
+#pay-button:hover {
     background-color: var(--Azul);
     transform: scale(1.05);
-     box-shadow: 
+    box-shadow:
         0 0 20px var(--AzulClaro),
         0 0 40px var(--AzulClaro),
         0 0 80px var(--AzulClaro),
         0 0 100px var(--AzulClaro);
 }
 
-#pay-button:active{
+#pay-button:active {
     transform: scale(0.98);
 }
 
 @media (max-width: 475px) {
 
     body {
-            height: 100vh;
+        height: 100vh;
     }
 
     /* Agradecimentos */
 
-    #Agradecimentos{
+    #Agradecimentos {
         width: 375px;
         height: 60px;
         display: flex;
@@ -277,13 +285,13 @@ h1 {
         align-items: center;
     }
 
-    #Agradecimentos h1{
+    #Agradecimentos h1 {
         font-size: 35px;
         font-family: 'Orbitron';
         font-weight: bold;
     }
 
-    #conteiner-principal{
+    #conteiner-principal {
         display: flex;
         justify-content: left;
         flex-direction: column;
@@ -298,7 +306,7 @@ h1 {
         transition: background-color 0.3s ease, transform 0.2s ease;
     }
 
-    #text-message{
+    #text-message {
         font-family: 'Arial';
         color: var(--Branco);
         text-align: justify;
@@ -313,8 +321,8 @@ h1 {
     }
 
     #title-primary {
-        margin-top:25px;
-        margin-bottom:25px;
+        margin-top: 25px;
+        margin-bottom: 25px;
         font-family: 'Orbitron';
         font-size: 35px;
         font-weight: 550;
@@ -328,20 +336,20 @@ h1 {
     }
 
     .swiper-slide img {
-    /* Mudar espaçamento */
+        /* Mudar espaçamento */
         width: 110px;
         height: 120px;
         border-radius: 15px;
-   
+
     }
 
-    .swiper-wrapper{
+    .swiper-wrapper {
         margin-top: 10px;
     }
 
     /* Nuvens de palavras */
 
-    #title-secundary{
+    #title-secundary {
         font-size: 35px;
         text-align: center;
         margin-bottom: 30px;
@@ -356,7 +364,7 @@ h1 {
 
     /* Recados */
 
-    #section-4{
+    #section-4 {
         background-color: var(--Preto);
         height: 790px;
         display: flex;
@@ -364,14 +372,14 @@ h1 {
 
     }
 
-    #title-terciary{
+    #title-terciary {
         font-size: 40px;
-        margin-left:95px;
+        margin-left: 95px;
         margin-top: 30px;
         margin-bottom: 30px;
     }
 
-    #message{
+    .message {
         display: flex;
         font-family: 'Orbitron';
         flex-direction: column;
@@ -380,18 +388,22 @@ h1 {
         height: 300px;
         border-radius: 15px;
         gap: 25px;
-        
+
     }
 
-    .typed-name{
+    #message-recado {
+        width: 111%;
+    }
+
+    #name {
         font-size: 15px;
     }
 
-    .typed-message{
+    #p-message {
         font-size: 10px;
     }
 
-    #pay-button{
+    #pay-button {
         height: 60px;
         width: 280px;
         margin: 150px 0 0 60px;
@@ -406,17 +418,17 @@ h1 {
         transition: background-color 0.3s ease, transform 0.2s ease;
     }
 
-    #pay-button:hover{
+    #pay-button:hover {
         background-color: var(--Azul);
         transform: scale(1.05);
-        box-shadow: 
+        box-shadow:
             0 0 20px var(--AzulClaro),
             0 0 40px var(--AzulClaro),
             0 0 80px var(--AzulClaro),
             0 0 100px var(--AzulClaro);
     }
 
-    #pay-button:active{
+    #pay-button:active {
         transform: scale(0.98);
     }
 
