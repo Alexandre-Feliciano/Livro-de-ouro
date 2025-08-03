@@ -160,7 +160,9 @@
             </div>
         </div>
 
-        <button id="pay-button">Deixe sua marca na turma!</button>
+        // adicionei o caminho para o arquivo pix.php
+
+        <button><a href="assets/api/pix.php">Deixe sua marca na turma!</a></button>
 
     </section>
 
