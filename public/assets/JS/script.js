@@ -56,9 +56,9 @@ window.addEventListener("resize", () => {
 // Conectando as páginas
 
 document.querySelector('button').onclick = function(){
-    window.location.href = "/assets/pages/gallery.html";
+    window.location.href = "assets/pages/gallery.php";
 }
 
 document.getElementById('#pay-button').onclick = function(){
-    window.location.href = "/assets/pages/pagamento.html";
+    window.location.href = "assets/pages/formulário.html";
 }

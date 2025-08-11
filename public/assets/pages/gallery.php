@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Livro de Ouro - Turma Informática</title>
-    <link rel="stylesheet" href="/assets/css/style-secundary.css">
-    <link rel="stylesheet" href="/assets/css/reset.css">
+    <link rel="stylesheet" href="../css/style-secundary.css">
+    <link rel="stylesheet" href="../css/reset.css">
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/wordcloud2.js/1.1.0/wordcloud2.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
@@ -28,7 +28,7 @@
         <div id="conteiner-principal">
 
             <figure>
-                <img id="image_turma" src="/assets/img/turma.jpg" alt="">
+                <img id="image_turma" src="../img/turma.jpg" alt="">
             </figure>
 
             <p id="text-message"> Em quatro anos de caminhada juntos, a Turma 1814 aprendeu que, mesmo nas diferenças,
@@ -73,15 +73,15 @@
 
                 <div class="swiper-wrapper">
 
-                    <div class="swiper-slide"><img src="/assets/img/alto_da_compadecida!.jpg" alt="imagem"></div>
-                    <div class="swiper-slide"><img src="/assets/img/fest_dance1.jpg" alt="imagem"></div>
-                    <div class="swiper-slide"><img src="/assets/img/fest_dance_valsa.jpg" alt="imagem"></div>
-                    <div class="swiper-slide"><img src="/assets/img/turma_jao.jpg" alt="imagem"></div>
-                    <div class="swiper-slide"><img src="/assets/img/alto_da_compadecida2.jpg" alt="imagem"></div>
-                    <div class="swiper-slide"><img src="/assets/img/turma_bruna.jpg" alt="imagem"></div>
-                    <div class="swiper-slide"><img src="/assets/img/turma_paty.jpg" alt="imagem"></div>
-                    <div class="swiper-slide"><img src="/assets/img/turma_alessa.jpg" alt="imagem"></div>
-                    <div class="swiper-slide"><img src="/assets/img/turma_leanderson.jpg" alt="imagem"></div>
+                    <div class="swiper-slide"><img src="../img/alto_da_compadecida!.jpg" alt="imagem"></div>
+                    <div class="swiper-slide"><img src="../img/fest_dance1.jpg" alt="imagem"></div>
+                    <div class="swiper-slide"><img src="../img/fest_dance_valsa.jpg" alt="imagem"></div>
+                    <div class="swiper-slide"><img src="../img/turma_jao.jpg" alt="imagem"></div>
+                    <div class="swiper-slide"><img src="../img/alto_da_compadecida2.jpg" alt="imagem"></div>
+                    <div class="swiper-slide"><img src="../img/turma_bruna.jpg" alt="imagem"></div>
+                    <div class="swiper-slide"><img src="../img/turma_paty.jpg" alt="imagem"></div>
+                    <div class="swiper-slide"><img src="../img/turma_alessa.jpg" alt="imagem"></div>
+                    <div class="swiper-slide"><img src="../img/turma_leanderson.jpg" alt="imagem"></div>
                 </div>
 
             </div>
@@ -89,30 +89,14 @@
             <div id="image-carousel">
 
                 <div class="swiper-wrapper">
-                    <div class="swiper-slide"><img src="/assets/img/allyce.jpg" alt="imagem"></div>
-                    <div class="swiper-slide"><img src="/assets/img/amanda_elen.jpg" alt="imagem"></div>
-                    <div class="swiper-slide"><img src="/assets/img/kaio_paty.jpg" alt="imagem"></div>
-                    <div class="swiper-slide"><img src="/assets/img/Xande_ramon_levy.jpg" alt="imagem"></div>
-                    <div class="swiper-slide"><img src="/assets/img/isabela_allyce.jpg" alt="imagem"></div>
-                    <div class="swiper-slide"><img src="/assets/img/pcc.jpg" alt="imagem"></div>
-                    <div class="swiper-slide"><img src="/assets/img/isabela_companhia.jpg" alt="imagem"></div>
-                    <div class="swiper-slide"><img src="/assets/img/9.jpg" alt="imagem"></div>
-
-                </div>
-
-            </div>
-
-            <div id="image-carousel">
-
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide"><img src="/assets/img/1.jpg" alt="imagem"></div>
-                    <div class="swiper-slide"><img src="/assets/img/2.jpg" alt="imagem"></div>
-                    <div class="swiper-slide"><img src="/assets/img/3.jpg" alt="imagem"></div>
-                    <div class="swiper-slide"><img src="/assets/img/4jpg.jpg" alt="imagem"></div>
-                    <div class="swiper-slide"><img src="/assets/img/5.jpg" alt="imagem"></div>
-                    <div class="swiper-slide"><img src="/assets/img/6.jpg" alt="imagem"></div>
-                    <div class="swiper-slide"><img src="/assets/img/7.jpg" alt="imagem"></div>
-                    <div class="swiper-slide"><img src="/assets/img/8.jpg" alt="imagem"></div>
+                    <div class="swiper-slide"><img src="../img/allyce.jpg" alt="imagem"></div>
+                    <div class="swiper-slide"><img src="../img/amanda_elen.jpg" alt="imagem"></div>
+                    <div class="swiper-slide"><img src="../img/kaio_paty.jpg" alt="imagem"></div>
+                    <div class="swiper-slide"><img src="../img/Xande_ramon_levy.jpg" alt="imagem"></div>
+                    <div class="swiper-slide"><img src="../img/isabela_allyce.jpg" alt="imagem"></div>
+                    <div class="swiper-slide"><img src="../img/pcc.jpg" alt="imagem"></div>
+                    <div class="swiper-slide"><img src="../img/isabela_companhia.jpg" alt="imagem"></div>
+                    <div class="swiper-slide"><img src="../img/9.jpg" alt="imagem"></div>
 
                 </div>
 
@@ -121,13 +105,29 @@
             <div id="image-carousel">
 
                 <div class="swiper-wrapper">
-                    <div class="swiper-slide"><img src="/assets/img/10.jpg" alt="imagem"></div>
-                    <div class="swiper-slide"><img src="/assets/img/12.jpg" alt="imagem"></div>
-                    <div class="swiper-slide"><img src="/assets/img/13.jpg" alt="imagem"></div>
-                    <div class="swiper-slide"><img src="/assets/img/14.jpg" alt="imagem"></div>
-                    <div class="swiper-slide"><img src="/assets/img/15.jpg" alt="imagem"></div>
-                    <div class="swiper-slide"><img src="/assets/img/16.jpg" alt="imagem"></div>
-                    <div class="swiper-slide"><img src="/assets/img/17.jpg" alt="imagem"></div>
+                    <div class="swiper-slide"><img src="../img/1.jpg" alt="imagem"></div>
+                    <div class="swiper-slide"><img src="../img/2.jpg" alt="imagem"></div>
+                    <div class="swiper-slide"><img src="../img/3.jpg" alt="imagem"></div>
+                    <div class="swiper-slide"><img src="../img/4jpg.jpg" alt="imagem"></div>
+                    <div class="swiper-slide"><img src="../img/5.jpg" alt="imagem"></div>
+                    <div class="swiper-slide"><img src="../img/6.jpg" alt="imagem"></div>
+                    <div class="swiper-slide"><img src="../img/7.jpg" alt="imagem"></div>
+                    <div class="swiper-slide"><img src="../img/8.jpg" alt="imagem"></div>
+
+                </div>
+
+            </div>
+
+            <div id="image-carousel">
+
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="../img/10.jpg" alt="imagem"></div>
+                    <div class="swiper-slide"><img src="../img/12.jpg" alt="imagem"></div>
+                    <div class="swiper-slide"><img src="../img/13.jpg" alt="imagem"></div>
+                    <div class="swiper-slide"><img src="../img/14.jpg" alt="imagem"></div>
+                    <div class="swiper-slide"><img src="../img/15.jpg" alt="imagem"></div>
+                    <div class="swiper-slide"><img src="../img/16.jpg" alt="imagem"></div>
+                    <div class="swiper-slide"><img src="../img/17.jpg" alt="imagem"></div>
 
                 </div>
 
@@ -160,19 +160,17 @@
             </div>
         </div>
 
-        // adicionei o caminho para o arquivo pix.php
-
-        <button><a href="assets/api/pix.php">Deixe sua marca na turma!</a></button>
+        <button id="pay-button">Deixe sua marca na turma!</button>
 
     </section>
 
 
-    <script src="/assets/JS/particles.js"></script>
-    <script src="/assets/JS/wordclound.js"></script>
-    <script src="/assets/JS/intersectionobserv.js"></script>
-    <script src="/assets/JS/carousel.js"></script>
-    <script src="/assets/JS/typed.js"></script>
-    <script src="/assets/JS/script.js"></script>
+    <script src="../JS/particles.js"></script>
+    <script src="../JS/wordclound.js"></script>
+    <script src="../JS/intersectionobserv.js"></script>
+    <script src="../JS/carousel.js"></script>
+    <script src="../JS/typed.js"></script>
+    <script src="../JS/script.js"></script>
 
 </body>
 

@@ -29,6 +29,7 @@ canvas {
 
 .conteiner {
     background-color: var(--Branco);
+    padding: 10px;
     width: 800px;
     height: 580px;
     border-radius: 10px;
