@@ -1,0 +1,23 @@
+{
+  "name": "livro-de-ouro",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Alexandre-Feliciano/Livro-de-ouro.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Alexandre-Feliciano/Livro-de-ouro/issues"
+  },
+  "homepage": "https://github.com/Alexandre-Feliciano/Livro-de-ouro#readme",
+  "dependencies": {
+    "express": "^5.1.0"
+  }
+}
