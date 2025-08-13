@@ -1,4 +1,4 @@
-fetch("assets/api/pix.php")
+fetch("api/pix.php")
     .then(res => res.json())
     .then(data => {
         if (data.id) {
