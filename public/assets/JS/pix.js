@@ -1,4 +1,4 @@
-fetch("/livro-de-ouro/public/assets/api/pix.php")
+fetch("assets/api/pix.php")
     .then(res => res.json())
     .then(data => {
         if (data.id) {
