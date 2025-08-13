@@ -17,6 +17,7 @@ body {
     height: 100vh;
 }
 
+/*Efeitos de partículas*/
 
 #particles-js {
     position: fixed;
@@ -38,6 +39,8 @@ body {
 }
 
 
+/*Conteiner Principal*/
+
 #conteiner-pay {
     display: flex;
     flex-direction: column;
@@ -51,11 +54,15 @@ body {
     box-shadow: 0 4px 100px var(--Branco);
 }
 
+/*QRCODE*/
+
 #qrcode {
     width: 59%;
     height: auto;
     border-radius: 10px;
 }
+
+/*Valor*/
 
 #valor {
     font-size: 23px;
@@ -64,9 +71,11 @@ body {
     font-weight: bold;
 }
 
+/*Código de pix*/
 #cod_pix {
     width: 82%;
     max-width: 500px;
+    overflow: hidden;
     resize: none;
     cursor: pointer;
     height: 44px;
@@ -83,6 +92,8 @@ body {
     background-color: var(--AzulClaro);
     font-weight: bold;
 }
+
+/*Botão do Link Externo*/
 
 #link_pay {
     color: var(--Branco);
@@ -110,6 +121,8 @@ body {
     transform: scale(0.98);
 }
 
+/*Alerta do Código do Pix*/
+
 #alert-copiar {
     position: fixed;
     background-color: var(--Branco);
@@ -132,4 +145,120 @@ body {
     opacity: 1;
     pointer-events: auto;
     transform: translateY(0);
+}
+
+@media (max-width: 475px) {
+
+    /*Conteiner Principal*/
+
+    #conteiner-pay {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 70px;
+        margin: auto;
+        background-color: var(--Preto);
+        height: 100%;
+        width: 77%;
+        box-shadow: 0 4px 100px var(--Branco);
+    }
+
+    /*QRCODE*/
+
+    #qrcode {
+        width: 75%;
+        height: auto;
+        border-radius: 10px;
+    }
+
+    /*Valor*/
+
+    #valor {
+        font-size: 16px;
+        text-align: center;
+        color: var(--Branco);
+        font-family: 'Orbitron';
+        font-weight: bold;
+    }
+
+    /*Código de pix*/
+
+    #cod_pix {
+        width: 75%;
+        overflow: hidden;
+        max-width: 500px;
+        resize: none;
+        cursor: pointer;
+        height: 44px;
+        outline: none;
+        padding: 10px;
+        border-radius: 5px;
+        border: none;
+        font-size: 10px;
+        transition: all 0.15s ease-in-out;
+    }
+
+    #cod_pix:active {
+        color: var(--Branco);
+        background-color: var(--AzulClaro);
+        font-weight: bold;
+    }
+
+    /*Botão do Link Externo*/
+
+    #link_pay {
+        color: var(--Branco);
+        background-color: var(--Azul);
+        padding: 12px;
+        border-radius: 15px;
+        width: 190px;
+        text-align: center;
+        font-size: 14px;
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+    #link_pay:hover {
+        background-color: var(--Azul);
+        transform: scale(1.05);
+        box-shadow:
+            0 0 20px var(--AzulClaro),
+            0 0 40px var(--AzulClaro),
+            0 0 80px var(--AzulClaro),
+            0 0 100px var(--AzulClaro);
+    }
+
+    #link_pay:active {
+        transform: scale(0.96);
+    }
+
+    /*Alerta do Código do Pix*/
+
+    #alert-copiar {
+        position: fixed;
+        background-color: var(--Branco);
+        color: var(--AzulClaro);
+        letter-spacing: 2px;
+        opacity: 0;
+        bottom: 30px;
+        width: 26%;
+        text-align: center;
+        left: 30%;
+        right: 30%;
+        padding: 20px;
+        border-radius: 12px;
+        font-size: 10px;
+        pointer-events: none;
+        transform: translateY(20px);
+        transition: all 0.3s ease;
+    }
+
+    #alert-copiar.ativar {
+        opacity: 1;
+        pointer-events: auto;
+        transform: translateY(0);
+    }
+
+
 }
