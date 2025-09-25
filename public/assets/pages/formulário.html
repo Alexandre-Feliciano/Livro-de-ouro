@@ -27,11 +27,12 @@
         
         <h1>Escreva seu recado!</h1>
 
-        <form action="POST">
+        <form action="../php/process_bd.php" method="POST" onsubmit="return enviarRecado()">
             
             <input type="text" name="nome-recado" id="Nome-recado" required placeholder="Seu Nome">
             
             <div class="editor-quill"></div>
+            <textarea name="recado" id="recado" style="display:none"></textarea>
             
             <button class="Assinar-btn">Assinar</button>
             
@@ -47,6 +48,10 @@
             theme: 'snow',
         });
         
+        function enviarRecado() {
+        document.getElementById('recado').value = quill.root.innerHTML;
+        return true; 
+    }
     </script>
 </body>
 
