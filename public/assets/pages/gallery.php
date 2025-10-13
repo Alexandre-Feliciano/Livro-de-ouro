@@ -160,7 +160,7 @@
             </div>
         </div>
 
-        <button id="pay-button">Deixe sua marca na turma!</button>
+        <button class="pay-button">Deixe sua marca na turma!</button>
 
     </section>
 
@@ -171,6 +171,8 @@
     <script src="../JS/carousel.js"></script>
     <script src="../JS/typed.js"></script>
     <script src="../JS/script.js"></script>
+    <script src="../JS/paginacao.js"></script>
+
 
 </body>
 

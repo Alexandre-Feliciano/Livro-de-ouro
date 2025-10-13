@@ -238,7 +238,7 @@ h1 {
     align-items: center;
 }
 
-#pay-button {
+.pay-button {
     height: 60px;
     width: 350px;
     margin: 0 0 0 490px;
@@ -253,7 +253,7 @@ h1 {
     transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
-#pay-button:hover {
+.pay-button:hover {
     background-color: var(--Azul);
     transform: scale(1.05);
     box-shadow:
@@ -263,7 +263,7 @@ h1 {
         0 0 100px var(--AzulClaro);
 }
 
-#pay-button:active {
+.pay-button:active {
     transform: scale(0.98);
 }
 
@@ -403,7 +403,7 @@ h1 {
         font-size: 10px;
     }
 
-    #pay-button {
+    .pay-button {
         height: 60px;
         width: 280px;
         margin: 150px 0 0 60px;
@@ -418,7 +418,7 @@ h1 {
         transition: background-color 0.3s ease, transform 0.2s ease;
     }
 
-    #pay-button:hover {
+    .pay-button:hover {
         background-color: var(--Azul);
         transform: scale(1.05);
         box-shadow:
@@ -428,7 +428,7 @@ h1 {
             0 0 100px var(--AzulClaro);
     }
 
-    #pay-button:active {
+    .pay-button:active {
         transform: scale(0.98);
     }
 

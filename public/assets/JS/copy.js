@@ -1,4 +1,4 @@
-const area_pix = document.getElementById("cod_pix");
+const area_pix = document.getElementById("link_pix");
 const alert_copia = document.getElementById("alert-copiar");
 
 function mostrarAviso(mensagem){

@@ -52,6 +52,7 @@ form {
     background-color: var(--Branco);
     width: 743px;
     height: 45px;
+    padding: 10px;
     border-radius: 10px;
     border: 2px solid var(--Azul);
     outline: none;
@@ -111,7 +112,7 @@ form {
     font-weight: bold;
 }
 
-#cod_pix {
+#link_pix{
     width: 82%;
     max-width: 500px;
     overflow: hidden;
@@ -126,7 +127,7 @@ form {
     transition: all 0.15s ease-in-out;
 }
 
-#cod_pix:active {
+#link_pix:active {
     color: var(--Branco);
     background-color: var(--AzulClaro);
     font-weight: bold;

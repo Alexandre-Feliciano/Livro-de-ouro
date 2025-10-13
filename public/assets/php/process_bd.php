@@ -4,13 +4,11 @@ $arquivo = "../database/data.json";
 
 $nome = $_POST['nome-recado'] ?? '';
 $recado = $_POST['recado'] ?? '';
-$pagamento = $_POST['pagamento'] ?? '';
 
 $novo_dado = [
     'id' => uniqid(),
     'nome' => $nome,
     'recado' => $recado,
-    'pagamento' => $pagamento,
     'data' => date('Y-m-d H:i:s')
 ];
 
