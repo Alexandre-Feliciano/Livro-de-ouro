@@ -1,3 +1,5 @@
+arquivo_json = "../database/data.json";
+
 const palavras = [
     ['Luis', 50],
     ['Lucilia', 35],

@@ -12,15 +12,30 @@ const swiper = new Swiper('#image-carousel', {
 });
 
 // Carrossel dos recados
+
 document.addEventListener("messagecomandos", () => {
 
   const { annotate } = RoughNotation;
 
-  const pares = [
-    { nome: "Luis", mensagem: "Pegadinha do malandro" },
-    { nome: "Michael Jackson", mensagem: "Hello, how are you?" },
-    { nome: "Teste", mensagem: "corrupti optio fugiat voluptates autem? Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus quam modi sit nesciunt sint illum atque iusto vero recusandae delectus laborum, e" }
-  ];
+  const pares = [{nome: "Aguarde", mensagem: "Carregando..."}];
+
+  fetch("../database/data.json")
+  .then(res =>{
+    if(!res.ok){
+      throw new Error("Erro ao carregar o arquivo JSON");
+    }
+    return res.json();
+  })
+  .then(data =>{
+    for(let i = 0; i < data.length; i++){
+      const recadosjson = {
+        nome: data[i].nome,
+        mensagem: data[i].recado
+      };
+      pares.push(recadosjson);
+    }
+    console.log(pares);
+  });
 
   const recados = document.getElementById("swiper-wrapper");
   if (recados) {
