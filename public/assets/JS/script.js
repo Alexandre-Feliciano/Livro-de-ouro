@@ -60,7 +60,7 @@ document.querySelector('button').onclick = function(){
 }
 
 window.onload = function() {
-    document.getElementById('pay-button').onclick = function(){
+    document.getElementById('#pay-button').onclick = function(){
         window.location.href = "assets/pages/formulário.html";
     }
 }
