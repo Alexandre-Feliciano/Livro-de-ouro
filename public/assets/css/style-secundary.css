@@ -201,6 +201,7 @@ h1 {
 #p-message {
     font-size: 23px;
     text-align: justify;
+    word-wrap: break-word;
     line-height: 35px;
     color: var(--Branco);
 }
@@ -337,8 +338,8 @@ h1 {
 
     .swiper-slide img {
         /* Mudar espaçamento */
-        width: 110px;
-        height: 120px;
+        width: 80px;
+        height: 90px;
         border-radius: 15px;
 
     }

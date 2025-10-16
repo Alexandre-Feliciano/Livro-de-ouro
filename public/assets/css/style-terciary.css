@@ -1,4 +1,4 @@
-    @import url('https://fonts.googleapis.com/css2?family=Imperial+Script&family=Lexend:wght@100..900&family=Orbitron:wght@400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Unbounded:wght@200..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Imperial+Script&family=Lexend:wght@100..900&family=Orbitron:wght@400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Unbounded:wght@200..900&display=swap');
 
 :root {
     --Azul: #0e2979;
@@ -61,8 +61,7 @@ form {
     font-family: 'Poppins';
 }
 
-#conteiner-pay{
-
+#conteiner-pay {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -112,7 +111,7 @@ form {
     font-weight: bold;
 }
 
-#link_pix{
+#link_pix {
     width: 82%;
     max-width: 500px;
     overflow: hidden;
@@ -189,14 +188,14 @@ form {
 
 
 /* .content {
-    position: relative;
-    z-index: 1;
-    text-align: center;
-    margin-top: 5%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+position: relative;
+z-index: 1;
+text-align: center;
+margin-top: 5%;
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
 } */
 
 @media (max-width:475px) {
@@ -204,17 +203,17 @@ form {
     .conteiner {
         background-color: var(--Branco);
         width: 320px;
-        height: 760px;
+        height: auto;
         border-radius: 10px;
         margin: 40px 15px;
 
     }
 
     #qrcode {
-    width: 70%;
-    height: auto;
-    border-radius: 10px;
-}
+        width: 70%;
+        height: auto;
+        border-radius: 10px;
+    }
 
     h1 {
         font-size: 30px;
@@ -234,6 +233,31 @@ form {
         margin-bottom: 30px;
         font-size: 15px;
         font-family: 'Poppins';
+    }
+    
+    #alert-copiar {
+        position: fixed;
+        background-color: var(--Branco);
+        color: var(--AzulClaro);
+        letter-spacing: 2px;
+        opacity: 0;
+        bottom: 30px;
+        width: 26%;
+        text-align: center;
+        left: 30%;
+        right: 30%;
+        padding: 20px;
+        border-radius: 12px;
+        font-size: 10px;
+        pointer-events: none;
+        transform: translateY(20px);
+        transition: all 0.3s ease;
+    }
+
+    #alert-copiar.ativar {
+        opacity: 1;
+        pointer-events: auto;
+        transform: translateY(0);
     }
 
     .Assinar-btn {
