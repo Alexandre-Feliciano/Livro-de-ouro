@@ -15,7 +15,7 @@ const swiper = new Swiper('#image-carousel', {
 document.addEventListener("messagecomandos", () => {
 
   const { annotate } = RoughNotation;
-  const pares = [{nome: "neymar", mensagem: "blz parceiro"}];
+  const pares = [];
 
   fetch("../database/data.json")
     .then(res => {
