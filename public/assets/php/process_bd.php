@@ -10,7 +10,6 @@ $novo_dado = [
     'id' => uniqid(),
     'nome' => $nome,
     'recado' => $recado,
-    'pagamento' => $pagamento,
     'data' => date('Y-m-d H:i:s')
 ];
 
