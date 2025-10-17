@@ -1,18 +1,17 @@
 const palavras = [];
 
-fetch("../database/data.json")
-    .then(res => {
-        if (!res.ok) {
-            throw new Error("Erro ao carregar o arquivo: ");
-        }
-        return res.json();
-    })
+fetch("https://api.jsonbin.io/v3/b/68f28a99ae596e708f194a4d/latest", {
+    headers: {
+        "X-Master-Key": "$2a$10$Efg4UJVCcFdE/rNv4UHtxuJ.oqqkJvnNGveWSKd0rVaJBTldI87Sq"
+    }
+})
+    .then(res => res.json())
     .then(dados => {
-        dados.forEach(
-            recados => {
+        dados.record.recados.forEach(
+            recado => {
                 const num_random = Math.floor(Math.random() * 100) + 5;
                 palavras.push([
-                    recados.nome,
+                    recado.nome,
                     num_random
                 ]);
             });

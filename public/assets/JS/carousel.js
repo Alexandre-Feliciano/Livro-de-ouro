@@ -17,79 +17,83 @@ document.addEventListener("messagecomandos", () => {
   const { annotate } = RoughNotation;
   const pares = [];
 
-  fetch("../database/data.json")
+  fetch("https://api.jsonbin.io/v3/b/68f28a99ae596e708f194a4d/latest", {
+    headers: {
+      "X-Master-Key": "$2a$10$Efg4UJVCcFdE/rNv4UHtxuJ.oqqkJvnNGveWSKd0rVaJBTldI87Sq"
+    }
+  })
     .then(res => {
       if (!res.ok) {
-        throw new Error("Erro ao carregar o arquivo: ");
+        throw new Error("Erro ao carregar o arquivo");
       }
       return res.json();
     })
     .then(dados => {
-      dados.forEach(
-        recados => {
+      dados.record.recados.forEach(
+        recado => {
           pares.push({
-            nome: recados.nome,
-            mensagem: recados.recado
+            nome: recado.nome,
+            mensagem: recado.recado
           });
         });
-      
-  const recados = document.getElementById("swiper-wrapper");
-  if (recados) {
-    pares.forEach((recado, i) => {
-      const div = document.createElement("div");
-      div.className = "swiper-slide";
-      div.innerHTML = `<div class="message" id="message-${i}"> 
+
+      const recados = document.getElementById("swiper-wrapper");
+      if (recados) {
+        pares.forEach((recado, i) => {
+          const div = document.createElement("div");
+          div.className = "swiper-slide";
+          div.innerHTML = `<div class="message" id="message-${i}"> 
     <h2 id="name">${recado.nome}</h2> 
     <p id="p-message">${recado.mensagem}</p>
     </div>`;
-      recados.appendChild(div);
-    });
-
-    const CarrosselRecados = new Swiper("#recado-swiper", {
-      loop: true,
-      autoplay: {
-        delay: 23000,
-        disableOnInteraction: false,
-      },
-      speed: 1000,
-      grabCursor: true,
-      effect: 'slide'
-    });
-
-    function coraleatoria() {
-      const cores = ["#3776ff", "#354882", "#0e2979"];
-      return cores[Math.floor(Math.random() * cores.length)]
-    }
-
-    setTimeout(() => {
-      const iniciomsg = document.getElementById("message-0");
-      if (iniciomsg && !iniciomsg.dataset.animado) {
-        const recadoefeito = annotate(iniciomsg, {
-          type: 'highlight',
-          color: coraleatoria(),
-          padding: 12,
-          animationDuration: 800,
+          recados.appendChild(div);
         });
-        recadoefeito.show();
-        iniciomsg.dataset.animado = "True";
-      }
-    }, 3);
 
-    CarrosselRecados.on('slideChangeTransitionEnd', () => {
-      const todasmsg = CarrosselRecados.realIndex;
-      const proximamsg = document.getElementById(`message-${todasmsg}`);
-      if (proximamsg && !proximamsg.dataset.animado) {
-        const recadoefeito = annotate(proximamsg, {
-          type: 'highlight',
-          color: coraleatoria(),
-          padding: 12,
-          animationDuration: 800,
+        const CarrosselRecados = new Swiper("#recado-swiper", {
+          loop: true,
+          autoplay: {
+            delay: 23000,
+            disableOnInteraction: false,
+          },
+          speed: 1000,
+          grabCursor: true,
+          effect: 'slide'
         });
-        recadoefeito.show();
-        proximamsg.dataset.animado = "True";
+
+        function coraleatoria() {
+          const cores = ["#3776ff", "#354882", "#0e2979"];
+          return cores[Math.floor(Math.random() * cores.length)]
+        }
+
+        setTimeout(() => {
+          const iniciomsg = document.getElementById("message-0");
+          if (iniciomsg && !iniciomsg.dataset.animado) {
+            const recadoefeito = annotate(iniciomsg, {
+              type: 'highlight',
+              color: coraleatoria(),
+              padding: 12,
+              animationDuration: 800,
+            });
+            recadoefeito.show();
+            iniciomsg.dataset.animado = "True";
+          }
+        }, 3);
+
+        CarrosselRecados.on('slideChangeTransitionEnd', () => {
+          const todasmsg = CarrosselRecados.realIndex;
+          const proximamsg = document.getElementById(`message-${todasmsg}`);
+          if (proximamsg && !proximamsg.dataset.animado) {
+            const recadoefeito = annotate(proximamsg, {
+              type: 'highlight',
+              color: coraleatoria(),
+              padding: 12,
+              animationDuration: 800,
+            });
+            recadoefeito.show();
+            proximamsg.dataset.animado = "True";
+          }
+        });
       }
-    });
-  }
-})
+    })
 
 });
