@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Imperial+Script&family=Lexend:wght@100..900&family=Orbitron:wght@400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Unbounded:wght@200..900&display=swap');
+
+:root {
+    --Azul: #0e2979;
+    --AzulMédio: #354882;
+    --AzulClaro: #3c6dff;
+    --AzulClaro: #3c6dff;
+    --Branco: #f3eeee;
+    --Preto: #181717;
+}
+
+body {
+    background-color: var(--Azul);
+    color: var(--Azul);
+    font-family: 'Orbitron';
+    overflow: hidden;
+    height: 100vh;
+}
+
+/*Efeitos de partículas*/
+
+#particles-js {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    background-color: var(--Azul);
+}
+
+.content {
+    position: relative;
+    z-index: 1;
+    color: var(--Branco);
+    text-align: center;
+    padding-top: 20%;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+/*Conteiner Principal*/
+
+#conteiner-warning {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    gap: 20px;
+    background-color: var(--Preto);
+    height: 100%;
+    width: 65%;
+    box-shadow: 0 4px 100px var(--Branco);
+}
+
+/*Conteiner da Lista*/
+
+#conteiner-list {
+    background-color: var(--Branco);
+    border-radius: 15px;
+    padding: 2% 3%;
+    width: 75%;
+}
+
+/*Titulo de Aviso*/
+
+#title-warning {
+    font-size: 23px;
+    color: var(--Branco);
+    font-family: 'Orbitron';
+    text-align: center;
+    font-weight: bold;
+}
+
+/*Botão para Continuar*/
+
+.button-continue {
+    height: 45px;
+    width: 220px;
+    border: none;
+    margin-top: 5px;
+    border-radius: 30px;
+    background-color: var(--Azul);
+    color: var(--Branco);
+    font-family: 'Orbitron';
+    font-weight: bold;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.button-continue:hover {
+    background-color: var(--Azul);
+    transform: scale(1.05);
+    box-shadow:
+        0 0 20px var(--AzulClaro),
+        0 0 40px var(--AzulClaro),
+        0 0 80px var(--AzulClaro),
+        0 0 100px var(--AzulClaro);
+}
+
+.button-continue:active {
+    transform: scale(0.98);
+}
+
+/*Lista da Orientações*/
+.list-warning {
+    display: flex;
+    flex-direction: column;
+    gap: 47px;
+    text-align: left;
+    list-style-type: decimal;
+    list-style-position: inside;
+}
+
+/*Orientações*/
+.warnings {
+    color: var(--AzulClaro);
+    font-weight: bold;
+    line-height: 25px;
+    font-size: 15px;
+}
+
+@media (max-width: 475px) {
+
+    /*Conteiner Principal*/
+
+    #conteiner-warning {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        margin: auto;
+        background-color: var(--Preto);
+        height: 100%;
+        width: 77%;
+        box-shadow: 0 4px 100px var(--Branco);
+    }
+
+    /*Conteiner da Lista*/
+
+    #conteiner-list {
+        background-color: var(--Branco);
+        border-radius: 15px;
+        padding: 4% 3%;
+        width: 85%;
+    }
+
+    /*Titulo de Aviso*/
+
+    #title-warning {
+        font-size: 16px;
+        color: var(--Branco);
+        font-family: 'Orbitron';
+        text-align: center;
+        font-weight: bold;
+    }
+
+    /*Botão para Continuar*/
+
+    .button-continue {
+        height: 45px;
+        width: 190px;
+        border: none;
+        margin-top: 35px;
+        border-radius: 30px;
+        background-color: var(--Azul);
+        color: var(--Branco);
+        font-family: 'Orbitron';
+        font-weight: bold;
+        font-size: 13px;
+        cursor: pointer;
+        transition: background-color 0.3s ease, transform 0.2s ease;
+    }
+
+    .button-continue:hover {
+        background-color: var(--Azul);
+        transform: scale(1.05);
+        box-shadow:
+            0 0 20px var(--AzulClaro),
+            0 0 40px var(--AzulClaro),
+            0 0 80px var(--AzulClaro),
+            0 0 100px var(--AzulClaro);
+    }
+
+    .button-continue:active {
+        transform: scale(0.98);
+    }
+
+    /*Lista da Orientações*/
+    .list-warning {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        text-align: justify;
+        list-style-type: decimal;
+        list-style-position: inside;
+    }
+
+    /*Orientações*/
+    .warnings {
+        color: var(--AzulClaro);
+        font-weight: bold;
+        line-height: 14px;
+        font-size: 12px;
+    }
+
+}

@@ -171,7 +171,7 @@
     <script src="../JS/carousel.js"></script>
     <script src="../JS/typed.js"></script>
     <script src="../JS/script.js"></script>
-    <script src="../JS/paginacao.js"></script>
+    <script src="../JS/pagewarning.js"></script>
 
 
 </body>

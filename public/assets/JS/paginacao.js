@@ -1,5 +1,5 @@
 window.onload = function () {
-    document.querySelector('.pay-button').onclick = function () {
+    document.querySelector('.button-continue').onclick = function () {
         window.location.href = "./formulário.html";
     }
 };
@@ -7,3 +7,6 @@ window.onload = function () {
 document.getElementById('button-back').onclick = function () {
     window.location.href = "../pages/gallery.php";
 }
+
+
+
