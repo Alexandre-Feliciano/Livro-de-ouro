@@ -115,10 +115,11 @@ body {
 
 /*Orientações*/
 .warnings {
-    color: var(--AzulClaro);
+    color: var(--Preto);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-weight: bold;
     line-height: 25px;
-    font-size: 15px;
+    font-size: 20px;
 }
 
 @media (max-width: 475px) {
@@ -134,7 +135,7 @@ body {
         margin: auto;
         background-color: var(--Preto);
         height: 100%;
-        width: 77%;
+        width: 100%;
         box-shadow: 0 4px 100px var(--Branco);
     }
 
@@ -150,7 +151,7 @@ body {
     /*Titulo de Aviso*/
 
     #title-warning {
-        font-size: 16px;
+        font-size: 18px;
         color: var(--Branco);
         font-family: 'Orbitron';
         text-align: center;
@@ -200,10 +201,11 @@ body {
 
     /*Orientações*/
     .warnings {
-        color: var(--AzulClaro);
+        color: var(--Preto);
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         font-weight: bold;
-        line-height: 14px;
-        font-size: 12px;
+        line-height: 25px;
+        font-size: 16px;
     }
 
 }
