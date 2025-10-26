@@ -55,7 +55,7 @@ window.addEventListener("resize", () => {
 
 // Conectando as páginas
 
-document.querySelector('button').onclick = function(){
+document.querySelector('.btn-comecar').onclick = function(){
     window.location.href = "assets/pages/gallery.php";
 }
 
